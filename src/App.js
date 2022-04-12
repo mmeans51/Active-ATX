@@ -1,14 +1,11 @@
 import './App.css';
-import Nav from './components/Nav';
-import Home from './components/Home';
-import Footer from './components/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navo from './components/Nav';
 
 function App() {
   return (
-    <div>
-      <Nav />
-      <Home />
-      <Footer />
+    <div className='App'>
+      <Navo />
     </div>
   );
 }
