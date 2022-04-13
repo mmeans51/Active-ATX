@@ -1,9 +1,10 @@
 import React from "react";
+import img1 from '../../assets/images/s3m.jpg'
 
 function Home() {
     return(
         <div>
-            <h1>BODY</h1>
+            <img src={img1} alt="volleyball" className="img-1"></img>
         </div>
     )
 }

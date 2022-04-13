@@ -42,6 +42,7 @@ function Navigation() {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
+        {/* </Navbar.Toggle> */}
       </Navbar>
     </div>
   );
