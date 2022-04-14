@@ -1,17 +1,12 @@
-.bg-charcoal{
-  background-color: #333333;
-}
-
 body {
   margin: 0;
   padding: 0;
 }
 
-.navContainer {
+.jumbotron{
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: gray;
+  background-color: #CAC292;
 }
 
 .nav-p {
@@ -19,9 +14,30 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
-.nav-img {
-  margin-top: 20px;
+.carouselContainer {
+  display: block;
 }
+
+.linkContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #333333;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+

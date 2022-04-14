@@ -1,15 +1,14 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Nav, Navbar, Button, NavDropdown } from 'react-bootstrap';
 import logo from '../../assets/images/Logo2.png';
 
 function Navigation() {
   return (
-    <div>
-      <div className="navContainer">
-        <div className="logoContainer">
-          <div className='nav-img'>
-            <img src={logo} alt="volleyball"></img>
+    <div className='Nav'>
+      <div className="jumbotron">
+        <div>
+          <div>
+            <img className='logo' src={logo} width="150" alt='volleyball'></img>
           </div>
           <div className='nav-p'>
             <p>League Dates - March 21-27 Week 1 to May 8-15 Week 8</p>
@@ -17,10 +16,15 @@ function Navigation() {
           </div>
         </div>
       </div>
-      <Navbar bg="charcoal" variant="dark" expand="sm" collapseOnSelect>
-        
- 
-      </Navbar>
+      <div className='linkContainer'>
+        <div className='navlinks'>
+          <a href='/'>Home</a>
+          <a href='/'>Leagues</a>
+          <a href='/'>Tournament</a>
+          <a href='/'>Schedule</a>
+          <a href='/'>Rules</a>
+        </div>
+      </div>
     </div>
   );
 }
