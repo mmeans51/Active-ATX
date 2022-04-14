@@ -6,7 +6,7 @@ function Navigation() {
   return (
     <div className='Nav'>
       <div className="jumbotron">
-        <div>
+        <div className='jumbotronInner'>
           <div>
             <img className='logo' src={logo} width="150" alt='volleyball'></img>
           </div>
@@ -18,11 +18,31 @@ function Navigation() {
       </div>
       <div className='linkContainer'>
         <div className='navlinks'>
-          <a href='/'>Home</a>
-          <a href='/'>Leagues</a>
-          <a href='/'>Tournament</a>
-          <a href='/'>Schedule</a>
-          <a href='/'>Rules</a>
+        <ul>
+          <li>
+            <a href='/'>Home</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href='/leagues'>Leagues</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href='/tournament'>Tournament</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href='/schedule'>Schedule</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href='/rules'>Rules</a>
+          </li>
+        </ul>
         </div>
       </div>
     </div>

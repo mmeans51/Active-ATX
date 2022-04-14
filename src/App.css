@@ -1,3 +1,7 @@
+.App {
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,12 +13,20 @@ body {
   background-color: #CAC292;
 }
 
+.jumbotronInner {
+  margin-bottom: 20px;
+}
+
 .nav-p {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
   margin-top: 5px;
+}
+
+.nav-p {
+  color: white;
 }
 
 .carouselContainer {
@@ -25,13 +37,26 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #333333;
+  background-color: rgb(37, 37, 37);
 }
 
 .navlinks {
   display: flex;
   align-items: center;
-  justify-content: space-around; 
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+
+.navlinks ul {
+  list-style-type: none;
+  color: white;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 .logo {
