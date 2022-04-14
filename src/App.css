@@ -6,3 +6,22 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.navContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+}
+
+.nav-p {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.nav-img {
+  margin-top: 20px;
+}
