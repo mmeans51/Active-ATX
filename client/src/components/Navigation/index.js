@@ -49,6 +49,16 @@ function Navigation() {
             <a href='/rules'>Rules</a>
           </li>
         </ul>
+        <ul>
+          <li>
+            <a href='/free-agent-registration'>Free Agent Registration</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href='/open-play'>Open Play</a>
+          </li>
+        </ul>
         </div>
       </div>
     </div>
