@@ -1,37 +1,38 @@
-const jwt = require('jsonwebtoken');
+const faker = require('faker');
+const db = require('../config/connection');
+const { Player } = require('../models');
 
-const secret = 'shhhhhhh';
-const expiration = '2h';
+db.once('open', async () => {
+  await Player.deleteMany({});
 
-module.exports = {
-  authMiddleware: function({ req }) {
-   
-    let token = req.body.token || req.query.token || req.headers.authorization;
+  // create Player data
+  const PlayerData = [];
 
-    
-    if (req.headers.authorization) {
-      token = token
-        .split(' ')
-        .pop()
-        .trim();
-    }
+  for (let i = 0; i < 50; i += 1) {
+    const Playername = faker.internet.PlayerName();
+    const email = faker.internet.email(Playername);
+    const password = faker.internet.password();
 
-    if (!token) {
-      return req;
-    }
-
-    try {
-      const { data } = jwt.verify(token, secret, { maxAge: expiration });
-      req.user = data;
-    } catch {
-      console.log('Invalid token');
-    }
-
-    return req;
-  },
-  signToken: function({ username, email, _id }) {
-    const payload = { username, email, _id };
-
-    return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
+    PlayerData.push({ Playername, email, password });
   }
-};
+
+  const createdPlayers = await Player.collection.insertMany(PlayerData);
+
+  // create friends
+  for (let i = 0; i < 100; i += 1) {
+    const randomPlayerIndex = Math.floor(Math.random() * createdPlayers.ops.length);
+    const { _id: PlayerId } = createdPlayers.ops[randomPlayerIndex];
+
+    let friendId = PlayerId;
+
+    while (friendId === PlayerId) {
+      const randomPlayerIndex = Math.floor(Math.random() * createdPlayers.ops.length);
+      friendId = createdPlayers.ops[randomPlayerIndex];
+    }
+
+    await Player.updateOne({ _id: PlayerId }, { $addToSet: { friends: friendId } });
+  }
+
+  
+  process.exit(0);
+});
