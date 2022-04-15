@@ -3,6 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../../assets/images/Logo2.png';
 
 function Navigation() {
+
+ function handleClick(e) {
+   e.preventDefault();
+  console.log('Homepage')
+ }
+
   return (
     <div className='Nav'>
       <div className="jumbotron">
@@ -20,7 +26,7 @@ function Navigation() {
         <div className='navlinks'>
         <ul>
           <li>
-            <a href='/'>Home</a>
+            <a href='/' onClick={handleClick}>Home</a>
           </li>
         </ul>
         <ul>
