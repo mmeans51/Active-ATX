@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../../assets/images/Logo2.png';
 
-function Navigation() {
+function Navigation() { 
 
  function handleClick(e) {
    e.preventDefault();
@@ -57,6 +57,11 @@ function Navigation() {
         <ul>
           <li>
             <a href='/open-play'>Open Play</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href='/sign-up'>Sign-up</a>
           </li>
         </ul>
         </div>
