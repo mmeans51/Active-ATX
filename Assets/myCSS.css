@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,500i,700&display=swap');
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video{margin:0;padding:0;border:0;vertical-align:baseline;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display: block;}
+html{-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;overflow-y: scroll;}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    /*background: url("../../images/bg1.jpg") no-repeat;*/
+    color: #333;
+    font-size: 16px;
+    line-height:175%;
+    background-color: #f2f1df;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    border-left:5px solid #6f42c1;
+    padding-left:10px;
+    color:#842029;
+}
+
+h2 {
+    font-size: 26px;
+    border-left:2px solid #20c997;
+    padding-left:10px;
+    color:#6f42c1;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+    border:none !important;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent
+}
+
+img {vertical-align: middle}
+figure{margin:5px 0 10px;}
+figcaption {text-align: center;font-size:10px;font-style: italic;margin:0 auto;}
+hr {margin-top: 22px;margin-bottom: 22px;border: 0;border-top:1px solid rgba(255,255,255,.2);}
+li {margin-left:30px;}
+p{text-align:justify;margin-bottom:20px;}
+table {border-collapse: collapse;border-spacing: 0;}
+
+.borderBlack{border:0.1em solid black;}
+
+.img200{max-width:200px;}
+.img250{max-width:250px;}
+.img300{max-width:300px;}
+.img350{max-width:350px;}
+.img400{max-width:400px;}
+.img450{max-width:450px;}
+.img500{max-width:500px;}
+.img550{max-width:550px;}
+
+.brake{display:block;height:0;font-size:0;line-height:0;clear:both;}
+.ruler{width:100%;height:1px;border-top:0.1em solid #999;clear:both;margin:10px 0;}
+
+
+.image{
+	background: url(images/bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.border-top-bottom{
+    background-color: rgba(140,145,160,0.1);
+    border-radius:20px;
+    border-top:1px dashed rgba(140,145,160,1);
+    border-bottom:1px dashed rgba(140,145,160,1);
+    padding:20px 5px;
+    margin:20px auto;
+}
+.border-left-3-blue{
+    border-left:3px solid #0055b4;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#afe0ff+0,7db9e8+75&1+0,0+75 */
+    background: -moz-linear-gradient(left, rgba(175,224,255,1) 0%, rgba(125,185,232,0) 75%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(175,224,255,1) 0%,rgba(125,185,232,0) 75%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(175,224,255,1) 0%,rgba(125,185,232,0) 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#afe0ff', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
+}
+
+.border-dashed-999{border:.01em dashed #999;}
+.border-top-dashed-999{border-top:.01em dashed #999;}
+.border-left-dashed-999{border-left:.01em dashed #999;}
+.border-bottom-dashed-999{border-bottom:.01em dashed #999;}
+.border-right-dashed-999{border-right:.01em dashed #999;}
+
+
+.border-tb-bg{
+    background-color: #FFF;
+    padding:10px 20px;
+    border-top:.01em dashed #CCC;
+    border-bottom:.01em dashed #CCC;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+
+.myDl{
+    margin-top:40px;
+}
+
+.myDl dt{
+    margin-top:5px;
+}
+
+.myDl dd{
+    border-left:3px solid #ffcd39;
+    border-right:3px solid #ffcd39;
+    border-radius:25px;
+    padding:10px 10px 10px 15px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+/* ----------------------------------------------------- */
+.columnLeft{
+    background-color: rgba(29, 164, 226, 0.2);
+    height:100%;
+}
+.columnLeft div{
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+}
+.columnLeft div:hover{
+    background-color: rgba(204, 204, 204, 1);
+}
+/* ----------------------------------------------------- */
+
+.myDl-Border-Left dt, .myDl-Border-Left dd {
+    margin-top:20px;
+}
+
+.myDl-Border-Left dt{
+    text-align: right;
+}
+
+.myDl-Border-Left dd{
+    border-left:1px dashed #CCC;
+}
+/* ***************************************************************************************************************** */
+/*
+write like this
+	<span class="text-primary divider"></span>
+	<span class="text-default divider"></span>
+*/
+.divider{display:block;padding:0;width:275px;border-bottom:1px solid rgba(0, 0, 0, 0.1);position:relative;color:transparent;background-color:transparent;border-top:none;margin:10px auto;}
+.divider:before{content:'';top:50%;left:50%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);position:absolute;width:95px;border-bottom:3px solid;color:#fff;z-index:5;}
+.divider.text-primary:before{color:#ff2934;}
+.divider.text-default:before{color:#212526;}
+.divider + h2{margin-top:39px;}
+/* ***************************************************************************************************************** */
+
+.box-shadow-left-right-outside
+{
+    box-shadow:
+    inset 7px 0 7px -7px rgba(0,0,0,0.5), inset -7px 0 7px -7px rgba(0,0,0,0.5);
+    padding-top:20px;
+    padding-bottom:40px;
+}
+
+.box-shadow-left-right-inset
+{
+    box-shadow: 6px 0 6px -4px rgba(34, 34, 34, 0.3) , -6px 0 6px -4px rgba(34, 34, 34, 0.3);
+    -moz-box-shadow: 6px 0 6px -4px rgba(34, 34, 34, 0.3), -6px 0 6px -4px rgba(34, 34, 34, 0.3);
+    -webkit-box-shadow: 6px 0 6px -4px rgba(34, 34, 34, 0.3), -6px 0 6px -4px rgba(34, 34, 34, 0.3);
+    padding-top:20px;
+    padding-bottom:40px;
+}
+footer{
+
+
+}
+.rightsReserved{
+    background: rgba(27, 30, 33, 0.85);
+    color: rgba(255, 255, 255, 0.6);
+    text-align:center;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:10px;
+}
+.rightsReserved a{
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+.i24{
+    font-size:24px !important;
+    margin-left:10px;
+}
+.ptb75{
+    padding-top:75px;
+    padding-bottom:75px;
+}
+
+.shadowtb{
+    box-shadow:
+            inset 0 11px 8px -10px #CCC,
+            inset 0 -11px 8px -10px #CCC;
+}
+
+/* Border Inside */
+.inner-outline {
+    outline: 1px solid orange;
+    outline-offset: -10px;
+}
+
+/* CSS Transition */
+.trans{
+    border-radius:50%;
+    transition: all 1s ease;
+    border:.01em solid rgba(0,75,135,0.5);
+    margin:0 auto!important;
+    padding:10px;
+}
+.trans:hover{
+    border-radius: 0 25% 0 25%;
+    border:.01em solid #083154;
+    margin:0 auto!important;
+    padding:20px;
+}
+/* -------------------------------------------------------------------------------------- */
+span.redRequired{
+    color: red;
+    font-size: 18px;
+    font-weight: bolder;
+    position: relative;
+    top: 4px;
+}
+/* -------------------------------------------------------------------------------------- */
+.bodyText{
+    padding-top:40px;
+    padding-bottom:40px;
+}
+.needTeam{
+    background: url("../../images/bg1.jpg") no-repeat top center fixed;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+.needTeam h2, .needTeam p{
+    text-align:center!important;
+    font-weight: 300;
+}
+.needTeam h2{
+    border-left:none;
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-warning-rgb), var(--bs-text-opacity)) !important;
+}
+.top1{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b7ad70+0,c9c190+40,d5cea6+100 */
+    background: #b7ad70; /* Old browsers */
+    background: -moz-linear-gradient(top,  #b7ad70 0%, #c9c190 40%, #d5cea6 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #b7ad70 0%,#c9c190 40%,#d5cea6 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #b7ad70 0%,#c9c190 40%,#d5cea6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7ad70', endColorstr='#d5cea6',GradientType=0 ); /* IE6-9 */
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.players{
+    background-color: rgba(255, 255, 255, 0.5);
+    border:1px solid #CCC;
+    box-shadow: 3px 3px 3px #CCC;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding:30px;
+    border-radius:10px;
+}
+.section1{
+    padding-top:40px;
+    padding-bottom:40px;
+    box-shadow: inset 0 0 30px rgba(115,115,115,0.75);
+}
+.topLogoText{
+    text-align:center;
+    line-height:1.7;
+    font-weight: 700;
+    margin-bottom:0!important;
+    font-size:13px;
+}
+
+.section2{
+    background: url("../../images/bg2.jpg") no-repeat center fixed;
+    padding-top:200px;
+    padding-bottom:200px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
