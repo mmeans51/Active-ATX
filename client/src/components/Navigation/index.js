@@ -37,32 +37,32 @@ function Navigation({ currentPage, handlePageChange }) {
         </ul>
         <ul>
           <li>
-            <a href='/tournament'>Tournament</a>
+            <a href='#tournament' onClick={() => handlePageChange('Tournament')}>Tournament</a>
           </li>
         </ul>
         <ul>
           <li>
-            <a href='/schedule'>Schedule</a>
+            <a href='#schedule' onClick={() => handlePageChange('Schedule')}>Schedule</a>
           </li>
         </ul>
         <ul>
           <li>
-            <a href='/rules'>Rules</a>
+            <a href='#rules' onClick={() => handlePageChange('Rules')}>Rules</a>
           </li>
         </ul>
         <ul>
           <li>
-            <a href='/free-agent-registration'>Free Agent Registration</a>
+            <a href='#freeAgent' onClick={() => handlePageChange('FreeAgent')}>Free Agent Registration</a>
           </li>
         </ul>
         <ul>
           <li>
-            <a href='/open-play'>Open Play</a>
+            <a href='/open-play' onClick={() => handlePageChange('OpenPlay')}>Open Play</a>
           </li>
         </ul>
         <ul>
           <li>
-            <a href='/sign-up'>Sign-up</a>
+            <a href='/sign-up' onClick={() => handlePageChange('Signup')}>Sign-up</a>
           </li>
         </ul>
         </div>
