@@ -18,7 +18,7 @@ const resolvers = {
     Players: async () => {
       return Player.find()
         .select('-__v -password')
-        .populate('thoughts')
+
         .populate('friends');
     },
     Player: async (parent, { Playername }) => {
