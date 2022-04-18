@@ -1,0 +1,89 @@
+.App {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.jumbotron{
+  display: flex;
+  align-items: center;
+  background-color: #CAC292;
+}
+
+.jumbotronInner {
+  margin-bottom: 20px;
+}
+
+.nav-p {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.nav-p p {
+  color:black;
+  font-weight: 200;
+  font-size: 110%;
+}
+
+.carouselContainer {
+  display: block;
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(37, 37, 37);
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+
+.navlinks ul {
+  list-style-type: none;
+  color: white;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+
+.carouselContainer {
+  /* background-color: whitesmoke; */
+  /* max-width: 1200px; */
+  margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  /* float: left; */
+}
+
+.carouselContainer h5, p {
+  color:white;
+}
+
+.carouselContainer img {
+  filter: brightness(50%);
+}
