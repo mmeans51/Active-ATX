@@ -1,17 +1,8 @@
 .main {
-    background-color: aqua;
-    margin: 20px;
-}
-.container1{
-    background-color: azure;
-    margin: 50px;
-}
-
-.container2 {
     background-color: #FBEEC1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-around;
     margin: 0px;
     padding: 5%;    

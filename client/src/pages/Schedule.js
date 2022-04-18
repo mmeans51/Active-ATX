@@ -2,7 +2,9 @@ import React from 'react'
 
 function Schedule() {
   return (
-    <div>Schedule</div>
+    <div className='main'>
+      Schedule
+    </div>
   )
 }
 

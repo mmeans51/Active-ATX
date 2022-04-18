@@ -2,7 +2,9 @@ import React from 'react'
 
 function OpenPlay() {
   return (
-    <div>OpenPlay</div>
+    <div className='main'>
+      Open Play
+    </div>
   )
 }
 

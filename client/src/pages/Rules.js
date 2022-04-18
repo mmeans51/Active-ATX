@@ -2,7 +2,9 @@ import React from 'react'
 
 function Rules() {
   return (
-    <div>Rules</div>
+    <div className='main'>
+      Rules
+    </div>
   )
 }
 

@@ -4,7 +4,7 @@ function Tournament() {
   return (
     <div>
       <div>
-        <div>
+        <div className='main'>
           <h2>$25 registration for Blind Draw 4's</h2>
           <h1>Tournament</h1>
 
