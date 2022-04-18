@@ -57,12 +57,12 @@ function Navigation({ currentPage, handlePageChange }) {
         </ul>
         <ul>
           <li>
-            <a href='/open-play' onClick={() => handlePageChange('OpenPlay')}>Open Play</a>
+            <a href='#open-play' onClick={() => handlePageChange('OpenPlay')}>Open Play</a>
           </li>
         </ul>
         <ul>
           <li>
-            <a href='/sign-up' onClick={() => handlePageChange('Signup')}>Sign-up</a>
+            <a href='#sign-up' onClick={() => handlePageChange('Signup')}>Sign-up</a>
           </li>
         </ul>
         </div>

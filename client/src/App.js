@@ -10,7 +10,7 @@ import Tournament from './pages/Tournament';
 import Schedule from './pages/Schedule';
 import Rules from './pages/Rules';
 import OpenPlay from './pages/OpenPlay';
-// import Signup from './pages/Signup';
+import Signup from './pages/Signup';
 
 function App() {
 
@@ -38,7 +38,7 @@ function App() {
     if(currentPage === 'OpenPlay') {
       return <OpenPlay />
     }
-    return <Home />
+    return <Signup />
   }
 
   const handlePageChange = (page) => setCurrentPage(page);
