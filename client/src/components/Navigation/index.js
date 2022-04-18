@@ -2,14 +2,15 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../../assets/images/Logo2.png';
 
-function Navigation() { 
-
- function handleClick(e) {
-   e.preventDefault();
-  console.log('Homepage')
- }
+function Navigation({ currentPage, handlePageChange }) {
+  
+//  function handleClick(e) {
+//    e.preventDefault();
+//   console.log('Homepage')
+//  }
 
   return (
+
     <div className='Nav'>
       <div className="jumbotron">
         <div className='jumbotronInner'>
@@ -26,12 +27,12 @@ function Navigation() {
         <div className='navlinks'>
         <ul>
           <li>
-            <a href='/' onClick={handleClick}>Home</a>
+            <a href='#home' onClick={() => handlePageChange('Home')}>Home</a>
           </li>
         </ul>
         <ul>
           <li>
-            <a href='/leagues'>Leagues</a>
+            <a href='#leagues' onClick={() => handlePageChange('Leagues')}>Leagues</a>
           </li>
         </ul>
         <ul>
@@ -67,6 +68,7 @@ function Navigation() {
         </div>
       </div>
     </div>
+
   );
 }
 

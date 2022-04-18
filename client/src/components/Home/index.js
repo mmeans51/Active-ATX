@@ -6,7 +6,6 @@ import img3 from '../../assets/images/IMG_2447.jpg';
 
 function Home() {
   return (
-  
     <div className="carouselContainer">
       <div className="innerCarouselContainer">
         <Carousel variant="dark">
