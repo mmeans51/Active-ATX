@@ -33,7 +33,7 @@ font-size: 110%;
 display: flex;
 justify-content: center;
 flex-direction: column;
-background-color: rgb(37, 37, 37);
+background-color: #1F2833;
 }
 
 .navlinks {
@@ -52,5 +52,10 @@ color: white;
 
 .navlinks a {
 text-decoration: none;
-color: whitesmoke;
+/* color: #66FCF1; */
+color: #C5C6C7;
+}
+
+.navlinks a:hover {
+    color: #66FCF1;
 }
