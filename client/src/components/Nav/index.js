@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../../assets/images/Logo2.png';
+import './styles.css';
 
 function Nav({ currentPage, handlePageChange }) {
   

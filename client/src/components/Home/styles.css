@@ -1,0 +1,23 @@
+.carouselContainer {
+    display: block;
+  }
+  
+  .carouselContainer {
+    /* background-color: whitesmoke; */
+    /* max-width: 1200px; */
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    /* float: left; */
+  }
+  
+  .carouselContainer h5, p {
+    color:white;
+  }
+  
+  .carouselContainer img {
+    filter: brightness(50%);
+  }
+  
