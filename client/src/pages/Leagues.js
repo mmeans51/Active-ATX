@@ -3,8 +3,8 @@ import './styles.css';
 
 function Leagues() {
   return (
-    <div className='main'>
-      <div className='container1'>
+    // <div className='main'>
+      // <div className='container1'>
         <div className='container2'>
           <div>
             <h1>Leagues</h1>
@@ -100,8 +100,8 @@ function Leagues() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      // </div>
+    // </div>
   );
 }
 
