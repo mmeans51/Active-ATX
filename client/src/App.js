@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navigation from './components/Navigation';
+import Nav from './components/Nav';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import FreeAgent from './pages/FreeAgent';
@@ -45,7 +45,7 @@ function App() {
 
   return (
     <div className='App'>
-      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* <Home /> */}
       {renderPage()}
       <Footer />

@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../../assets/images/Logo2.png';
 
-function Navigation({ currentPage, handlePageChange }) {
+function Nav({ currentPage, handlePageChange }) {
   
 //  function handleClick(e) {
 //    e.preventDefault();
@@ -72,4 +72,4 @@ function Navigation({ currentPage, handlePageChange }) {
   );
 }
 
-export default Navigation;
+export default Nav;
