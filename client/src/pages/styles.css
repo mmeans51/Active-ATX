@@ -1,0 +1,17 @@
+.main {
+    background-color: aqua;
+    margin: 20px;
+}
+.container1{
+    background-color: azure;
+    margin: 50px;
+}
+
+.container2 {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px
+}
