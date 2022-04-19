@@ -2,7 +2,7 @@ import React from 'react';
 
 function Tournament() {
   return (
-    <div className="main">
+    <div className="mainTournament">
       <h2>$25 registration for Blind Draw 4's</h2>
       <h1>Tournament</h1>
 {/* need a tournament registration page */}

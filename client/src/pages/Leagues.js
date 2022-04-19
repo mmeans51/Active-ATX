@@ -3,7 +3,7 @@ import './styles.css';
 
 function Leagues() {
   return (
-    <div className="main">
+    <div className="mainLeagues">
       <div>
         <h1>Leagues</h1>
         <dl>

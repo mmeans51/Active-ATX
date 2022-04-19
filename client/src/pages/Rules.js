@@ -5,17 +5,13 @@ function Rules() {
   const [show, setShow] = useState(false);
 
   return (
-    <div className="main">
+    <div className="mainRules">
       <div className="main2">
         <h1>Rules</h1>
       </div>
       {/* <> */}
       <div className="main2">
-        <Button
-          variant="secondary"
-          size="lg"
-          onClick={() => setShow(true)}
-        >
+        <Button variant="secondary" size="lg" onClick={() => setShow(true)}>
           Sand Rules and what we Tolerate & Allowed
         </Button>
 
@@ -59,56 +55,46 @@ function Rules() {
         </Modal>
       </div>
       {/* </> */}
-      {/* <> */}
       <div className="main2">
-        <Button
-          variant="outline-secondary"
-          size="lg"
-          onClick={() => setShow(true)}
-        >
+        <Button variant="secondary" size="lg" onClick={() => setShow(true)}>
           Sand Rules and what we Tolerate & Allowed
         </Button>
-
-        <Modal
-          show={show}
-          onHide={() => setShow(false)}
-          dialogClassName="modal-90w"
-          aria-labelledby="example-custom-modal-styling-title"
-        >
-          <Modal.Header closeButton>
-            <Modal.Title id="example-custom-modal-styling-title">
-              Sand Rules and what we Tolerate & Allowed
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <ol>
-              <li>
-                No Smoking on the sand courts or within 15 feet of courts,
-                Smoking allowed in designatedarea only.
-              </li>
-              <li>
-                No Using tobacco products (dip) on the sand only in the seating
-                area
-              </li>
-              <li>
-                No Spitting in the sand (We are all barefoot, so please spit
-                outside of the sand.)
-              </li>
-              <li>Food in designated area only.</li>
-              <li>No Glass containers</li>
-              <li>No Hanging or pulling on nets</li>
-              <li>No Adjusting nets (nets can be adjusted by staff)</li>
-              <li>No Kicking balls against fence</li>
-              <li>
-                No dogs on the sand courts, Dogs can be on leashes around the
-                courts or in seating areas.
-              </li>
-              <li>NO Firearms or weapons Allowed</li>
-            </ol>
-          </Modal.Body>
-        </Modal>
       </div>
-      {/* </> */}
+      <div className="main2">
+        <Button variant="secondary" size="lg" onClick={() => setShow(true)}>
+          Sand Rules and what we Tolerate & Allowed
+        </Button>
+      </div>
+      <div className="main2">
+        <Button variant="secondary" size="lg" onClick={() => setShow(true)}>
+          Sand Rules and what we Tolerate & Allowed
+        </Button>
+      </div>
+      <div className="main2">
+        <Button variant="secondary" size="lg" onClick={() => setShow(true)}>
+          Sand Rules and what we Tolerate & Allowed
+        </Button>
+      </div>
+      <div className="main2">
+        <Button variant="secondary" size="lg" onClick={() => setShow(true)}>
+          Sand Rules and what we Tolerate & Allowed
+        </Button>
+      </div>
+      <div className="main2">
+        <Button variant="secondary" size="lg" onClick={() => setShow(true)}>
+          Sand Rules and what we Tolerate & Allowed
+        </Button>
+      </div>
+      <div className="main2">
+        <Button variant="secondary" size="lg" onClick={() => setShow(true)}>
+          Sand Rules and what we Tolerate & Allowed
+        </Button>
+      </div>
+      <div className="main2">
+        <Button variant="secondary" size="lg" onClick={() => setShow(true)}>
+          Sand Rules and what we Tolerate & Allowed
+        </Button>
+      </div>
     </div>
   );
 }
@@ -168,6 +154,7 @@ export default Rules;
               </ul>
             </dd>
           </dl>
+
           <dl class="myDl row">
             <dt class="col-md-3 align-self-center">
               <img
