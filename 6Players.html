@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width = device-width, initial-scale=1, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Bump Set Spike Volley</title>
+<?php include_once 'meta-tags.php';?>
+</head>
+<body>
+<?php include_once 'header.php';?>
+<div class="container-fluid">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9 bodyText">
+
+				<h1 class="mb-0">Register your Team</h1>
+				<h2>6 Players</h2>
+
+
+				<span class="redRequired">All fields are mandatory</span>
+
+				<div class="p-3"></div>
+
+
+
+				<div class="row justify-content-center">
+					<div class="col-md-12">
+						<form action="mailTeam.php" method="post" class="">
+
+							<div class="row">
+								<input type="hidden" name="subject" value="Team Registration 6 Players" />
+							<div class="col-md-6 py-3">
+								<label for="captainName" class="form-label">Captain Name</label>
+								<input type="text" class="form-control" id="captainName" name="captainName" required>
+							</div>
+								<div class="col-md-6 py-3">
+									<label for="captaineMail" class="form-label">Captain's Email </label>
+									<input type="text" class="form-control" id="captaineMail" name="captaineMail" required>
+								</div>
+
+							<div class="col-md-6 py-3">
+								<label for="teamName" class="form-label">Team Name</label>
+								<input type="text" class="form-control" id="teamName" name="teamName" required>
+							</div>
+							<div class="col-md-6 py-3">
+								<label for="teamPricing" class="form-label">Team Pricing</label>
+								<select class="form-select" id="teamPricing" aria-label="Default select example" name="teamPricing" required>
+									<option disabled selected>Select One</option>
+									<option value="4 player team $220">4 player team $220</option>
+									<option value="5 player team $275">5 player team $275</option>
+									<option value="6 player team $320">6 player team $320</option>
+									<option value="7 player team $375">7 player team $375</option>
+									<option value="8 player team $420">8 player team $420</option>
+									<option value="9 player team $475">9 player team $475</option>
+								</select>
+							</div>
+							</div>
+
+
+
+							<!-- =========================================================================================== Players =========== -->
+							<div class="players">
+								<div class="row">
+									<div class="col-md-12">
+										<h2 class="m-0 mb-4 text-danger">Player 1</h2>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-lg-4 py-3">
+										<label for="p1Name" class="form-label">Name</label>
+										<input type="text" class="form-control" id="p1Name" name="p1Name" required>
+									</div>
+
+									<div class="col-lg-4 py-3">
+										<label for="p1eMail" class="form-label">Email ID</label>
+										<input type="email" class="form-control" id="p1eMail" name="p1eMail" required>
+									</div>
+
+									<div class="col-lg-4 py-3">
+										<label for="p1Cell" class="form-label">Cell Phone</label>
+										<input type="number" class="form-control" id="p1Cell" name="p1Cell" required>
+									</div>
+
+									<div class="col-lg-6 py-3">
+										<label for="p1shirtSize" class="form-label">Shirt Size</label>
+										<select class="form-select" aria-label="Default select example" name="p1shirtSize" required>
+											<option disabled selected>Select One</option>
+											<option value="Small">Small</option>
+											<option value="Medium">Medium</option>
+											<option value="Large">Large</option>
+											<option value="XL">XL</option>
+											<option value="2 XL">2 XL</option>
+											<option value="3 XL">3 XL</option>
+										</select>
+									</div>
+									<div class="col-lg-6 py-3">
+										<label for="position" class="form-label">League Night</label>
+										<select class="form-select" aria-label="Default select example" name="p1leagueNight" required>
+											<option disabled selected>Select One</option>
+											<option value="Monday 4v4">Monday 4v4</option>
+											<option value="Tuesday 6v6">Tuesday 6v6</option>
+											<option value="Wednesday 4v4">Wednesday 4v4</option>
+											<option value="Friday 4v4">Friday 4v4</option>
+											<option value="Saturday 6v6">Saturday 6v6</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<!-- =========================================================================================== Players 2 =========== -->
+							<div class="players">
+								<div class="row">
+									<div class="col-md-12">
+										<h2 class="m-0 mb-4 text-danger">Player 2</h2>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-lg-4 py-3">
+										<label for="p2Name" class="form-label">Name</label>
+										<input type="text" class="form-control" id="p2Name" name="p2Name" required>
+									</div>
+
+									<div class="col-lg-4 py-3">
+										<label for="p2eMail" class="form-label">Email ID</label>
+										<input type="email" class="form-control" id="p2eMail" name="p2eMail" required>
+									</div>
+
+									<div class="col-lg-4 py-3">
+										<label for="p2Cell" class="form-label">Cell Phone</label>
+										<input type="number" class="form-control" id="p2Cell" name="p2Cell" required>
+									</div>
+
+									<div class="col-lg-6 py-3">
+										<label for="p2shirtSize" class="form-label">Shirt Size</label>
+										<select class="form-select" aria-label="Default select example" name="p2shirtSize" required>
+											<option disabled selected>Select One</option>
+											<option value="Small">Small</option>
+											<option value="Medium">Medium</option>
+											<option value="Large">Large</option>
+											<option value="XL">XL</option>
+											<option value="2 XL">2 XL</option>
+											<option value="3 XL">3 XL</option>
+										</select>
+									</div>
+									<div class="col-lg-6 py-3">
+										<label for="position" class="form-label">League Night</label>
+										<select class="form-select" aria-label="Default select example" name="p2leagueNight" required>
+											<option disabled selected>Select One</option>
+											<option value="Monday 4v4">Monday 4v4</option>
+											<option value="Tuesday 6v6">Tuesday 6v6</option>
+											<option value="Wednesday 4v4">Wednesday 4v4</option>
+											<option value="Friday 4v4">Friday 4v4</option>
+											<option value="Saturday 6v6">Saturday 6v6</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<!-- =========================================================================================== Players 3 =========== -->
+							<div class="players">
+								<div class="row">
+									<div class="col-md-12">
+										<h2 class="m-0 mb-4 text-danger">Player 3</h2>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-lg-4 py-3">
+										<label for="p3Name" class="form-label">Name</label>
+										<input type="text" class="form-control" id="p3Name" name="p3Name" required>
+									</div>
+
+									<div class="col-lg-4 py-3">
+										<label for="p3eMail" class="form-label">Email ID</label>
+										<input type="email" class="form-control" id="p3eMail" name="p3eMail" required>
+									</div>
+
+									<div class="col-lg-4 py-3">
+										<label for="p3Cell" class="form-label">Cell Phone</label>
+										<input type="number" class="form-control" id="p3Cell" name="p3Cell" required>
+									</div>
+
+									<div class="col-lg-6 py-3">
+										<label for="p3shirtSize" class="form-label">Shirt Size</label>
+										<select class="form-select" aria-label="Default select example" name="p3shirtSize" required>
+											<option disabled selected>Select One</option>
+											<option value="Small">Small</option>
+											<option value="Medium">Medium</option>
+											<option value="Large">Large</option>
+											<option value="XL">XL</option>
+											<option value="2 XL">2 XL</option>
+											<option value="3 XL">3 XL</option>
+										</select>
+									</div>
+									<div class="col-lg-6 py-3">
+										<label for="position" class="form-label">League Night</label>
+										<select class="form-select" aria-label="Default select example" name="p3leagueNight" required>
+											<option disabled selected>Select One</option>
+											<option value="Monday 4v4">Monday 4v4</option>
+											<option value="Tuesday 6v6">Tuesday 6v6</option>
+											<option value="Wednesday 4v4">Wednesday 4v4</option>
+											<option value="Friday 4v4">Friday 4v4</option>
+											<option value="Saturday 6v6">Saturday 6v6</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<!-- =========================================================================================== Players 4 =========== -->
+							<div class="players">
+								<div class="row">
+									<div class="col-md-12">
+										<h2 class="m-0 mb-4 text-danger">Player 4</h2>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-lg-4 py-3">
+										<label for="p4Name" class="form-label">Name</label>
+										<input type="text" class="form-control" id="p4Name" name="p4Name" required>
+									</div>
+
+									<div class="col-lg-4 py-3">
+										<label for="p4eMail" class="form-label">Email ID</label>
+										<input type="email" class="form-control" id="p4eMail" name="p4eMail" required>
+									</div>
+
+									<div class="col-lg-4 py-3">
+										<label for="p4Cell" class="form-label">Cell Phone</label>
+										<input type="number" class="form-control" id="p4Cell" name="p4Cell" required>
+									</div>
+
+									<div class="col-lg-6 py-3">
+										<label for="p4shirtSize" class="form-label">Shirt Size</label>
+										<select class="form-select" aria-label="Default select example" name="p4shirtSize" required>
+											<option disabled selected>Select One</option>
+											<option value="Small">Small</option>
+											<option value="Medium">Medium</option>
+											<option value="Large">Large</option>
+											<option value="XL">XL</option>
+											<option value="2 XL">2 XL</option>
+											<option value="3 XL">3 XL</option>
+										</select>
+									</div>
+									<div class="col-lg-6 py-3">
+										<label for="position" class="form-label">League Night</label>
+										<select class="form-select" aria-label="Default select example" name="p4leagueNight" required>
+											<option disabled selected>Select One</option>
+											<option value="Monday 4v4">Monday 4v4</option>
+											<option value="Tuesday 6v6">Tuesday 6v6</option>
+											<option value="Wednesday 4v4">Wednesday 4v4</option>
+											<option value="Friday 4v4">Friday 4v4</option>
+											<option value="Saturday 6v6">Saturday 6v6</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<!-- =========================================================================================== Players 5 =========== -->
+							<div class="players">
+								<div class="row">
+									<div class="col-md-12">
+										<h2 class="m-0 mb-4 text-danger">Player 5</h2>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-lg-4 py-3">
+										<label for="p5Name" class="form-label">Name</label>
+										<input type="text" class="form-control" id="p5Name" name="p5Name" required>
+									</div>
+
+									<div class="col-lg-4 py-3">
+										<label for="p5eMail" class="form-label">Email ID</label>
+										<input type="email" class="form-control" id="p5eMail" name="p5eMail" required>
+									</div>
+
+									<div class="col-lg-4 py-3">
+										<label for="p5Cell" class="form-label">Cell Phone</label>
+										<input type="number" class="form-control" id="p5Cell" name="p5Cell" required>
+									</div>
+
+									<div class="col-lg-6 py-3">
+										<label for="p5shirtSize" class="form-label">Shirt Size</label>
+										<select class="form-select" aria-label="Default select example" name="p5shirtSize" required>
+											<option disabled selected>Select One</option>
+											<option value="Small">Small</option>
+											<option value="Medium">Medium</option>
+											<option value="Large">Large</option>
+											<option value="XL">XL</option>
+											<option value="2 XL">2 XL</option>
+											<option value="3 XL">3 XL</option>
+										</select>
+									</div>
+									<div class="col-lg-6 py-3">
+										<label for="position" class="form-label">League Night</label>
+										<select class="form-select" aria-label="Default select example" name="p5leagueNight" required>
+											<option disabled selected>Select One</option>
+											<option value="Monday 4v4">Monday 4v4</option>
+											<option value="Tuesday 6v6">Tuesday 6v6</option>
+											<option value="Wednesday 4v4">Wednesday 4v4</option>
+											<option value="Friday 4v4">Friday 4v4</option>
+											<option value="Saturday 6v6">Saturday 6v6</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+
+
+							<!-- =========================================================================================== Players 6 =========== -->
+							<div class="players">
+								<div class="row">
+									<div class="col-md-12">
+										<h2 class="m-0 mb-4 text-danger">Player 6</h2>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-lg-4 py-3">
+										<label for="p6Name" class="form-label">Name</label>
+										<input type="text" class="form-control" id="p6Name" name="p6Name" required>
+									</div>
+
+									<div class="col-lg-4 py-3">
+										<label for="p6eMail" class="form-label">Email ID</label>
+										<input type="email" class="form-control" id="p6eMail" name="p6eMail" required>
+									</div>
+
+									<div class="col-lg-4 py-3">
+										<label for="p6Cell" class="form-label">Cell Phone</label>
+										<input type="number" class="form-control" id="p6Cell" name="p6Cell" required>
+									</div>
+
+									<div class="col-lg-6 py-3">
+										<label for="p6shirtSize" class="form-label">Shirt Size</label>
+										<select class="form-select" aria-label="Default select example" name="p6shirtSize" required>
+											<option disabled selected>Select One</option>
+											<option value="Small">Small</option>
+											<option value="Medium">Medium</option>
+											<option value="Large">Large</option>
+											<option value="XL">XL</option>
+											<option value="2 XL">2 XL</option>
+											<option value="3 XL">3 XL</option>
+										</select>
+									</div>
+									<div class="col-lg-6 py-3">
+										<label for="position" class="form-label">League Night</label>
+										<select class="form-select" aria-label="Default select example" name="p6leagueNight" required>
+											<option disabled selected>Select One</option>
+											<option value="Monday 4v4">Monday 4v4</option>
+											<option value="Tuesday 6v6">Tuesday 6v6</option>
+											<option value="Wednesday 4v4">Wednesday 4v4</option>
+											<option value="Friday 4v4">Friday 4v4</option>
+											<option value="Saturday 6v6">Saturday 6v6</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<button type="submit" class="btn btn-danger p-4" name="submitThis" value="Players6">Submit &amp; Make Payment</button>
+		</form>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-md-3"><?php include_once'columnLeft.php';?></div>
+		</div>
+	</div>
+</div><!--  Container -->
+<?php include_once 'footer.php';?>
+</body>
+</html>
