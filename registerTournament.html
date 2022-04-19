@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width = device-width, initial-scale=1, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Bump Set Spike Volley</title>
+<?php include_once 'meta-tags.php';?>
+</head>
+<body>
+<?php include_once 'header.php';?>
+<div class="container-fluid">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9 bodyText">
+
+				<!--<h1>Free Agent Sign-Up $55</h1>-->
+				<h1>Blind Draw 4's Tournament Registration</h1>
+				<!--<h2>Tournament Registration</h2>-->
+
+
+				<!--<a href="https://beacons.ai/bumpsetspikevolley" target="_blank" class="btn btn-danger p-3">Make Payment</a>-->
+
+				<div class="row justify-content-center">
+					<div class="col-md-8">
+						<form action="mail.php" method="post" class="">
+							<div class="my-4">
+								<label for="fName" class="form-label">First Name</label>
+								<input type="text" class="form-control" id="fName" name="fName" required>
+							</div>
+
+							<input type="hidden" name="subject" value="Tournament Registration - Free Agent Sign-Up $55">
+
+
+							<div class="my-4">
+								<label for="lName" class="form-label">Last Name</label>
+								<input type="text" class="form-control" id="lName" name="lName" required>
+							</div>
+
+							<div class="my-4">
+								<label for="eMail" class="form-label">Email</label>
+								<input type="email" class="form-control" id="eMail" name="eMail" required>
+							</div>
+
+							<div class="my-4">
+								<label for="callNumber" class="form-label">Cell Number</label>
+								<input type="number" class="form-control" id="callNumber" name="callNumber" required>
+							</div>
+
+							<!--<div class="my-4">
+								<label for="teamName" class="form-label">Team Name</label>
+								<input type="text" class="form-control" id="teamName" name="teamName" required>
+							</div>-->
+
+							<div class="my-4">
+								<label for="shirtSize" class="form-label">Shirt Size</label>
+								<select class="form-select" aria-label="Default select example" name="shirtSize" required>
+									<option disabled selected>Select One</option>
+									<option value="Small">Small</option>
+									<option value="Medium">Medium</option>
+									<option value="Large">Large</option>
+									<option value="XL">XL</option>
+									<option value="2 XL">2 XL</option>
+									<option value="3 XL">3 XL</option>
+								</select>
+							</div>
+
+							<div class="my-4">
+								<label for="shirtSize" class="form-label">Skill Level</label>
+								<select class="form-select" aria-label="Default select example" name="skillLevel" required>
+									<option disabled selected>Select One</option>
+									<option value="Recreation / Social">Recreation / Social</option>
+									<option value="Competitive">Competitive</option>
+									<option value="Advance">Advance</option>
+									<option value="B">B</option>
+									<option value="BB">BB</option>
+									<option value="A">A</option>
+								</select>
+							</div>
+
+							<div class="my-4">
+								<label for="position" class="form-label">Position</label>
+								<select class="form-select" aria-label="Default select example" name="position" required>
+									<option disabled selected>Select One</option>
+									<option value="Setter">Setter</option>
+									<option value="Lobero">Lobero</option>
+									<option value="Middle">Middle</option>
+									<option value="Outside Hitter">Outside Hitter</option>
+									<option value="Right Hitter">Right Hitter</option>
+								</select>
+							</div>
+							<!--<div class="my-4">
+								<label for="position" class="form-label">Position</label>
+								<input type="text" class="form-control" id="position" name="position">
+								<div id="emailHelp" class="form-text">(Middle, Setter, OH, RH, Labero) Shirt Size (S,M,L,XL,2XL 3XL)</div>
+							</div>-->
+							<button type="submit" class="btn btn-danger p-4" name="submitThis">Submit &amp; Make Payment</button>
+						</form>
+					</div>
+				</div>
+
+				<!--<a href="https://beacons.ai/bumpsetspikevolley" target="_blank" class="btn btn-danger mt-5 p-3">Make Payment</a>-->
+
+			</div>
+			<div class="col-md-3"><?php include_once'columnLeft.php';?></div>
+		</div>
+	</div>
+</div><!--  Container -->
+<?php include_once 'footer.php';?>
+</body>
+</html>
