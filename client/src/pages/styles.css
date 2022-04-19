@@ -35,7 +35,8 @@
 /* ------- Rules page ------- */
 .mainRules {
     /* background-color: #FBEEC1; */
-    background-color: #C5C6C7;
+    /* background-color: #C5C6C7; */
+    background-image: linear-gradient( #5AB9EA, #8860D0);
     display: flex;
     flex-direction: row;
     /* align-items: flex-start; */
@@ -43,14 +44,41 @@
     /* flex-wrap: wrap; */
     margin: 0px;
     padding: 5%;
-    /* height: 55vh;     */
-    height: 50vh;
+    /* height: 50vh; */
+}
+
+.mainRules1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    /* align-items: flex-start; */
+}
+
+.mainRules2 {
+   margin: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.mainRules2 h1 {
+    /* color: whitesmoke; */
+    font-family: playfair, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mainRules2 a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.mainRules2 ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   /* color: black;  */
+}
+.mainRules2 li:hover {
+    color: aliceblue;
 }
 
 /* ------- end of Rules page ------- */
-
-
-
-.main2 {
-   margin: 10px;
-}

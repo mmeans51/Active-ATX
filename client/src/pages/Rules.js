@@ -6,94 +6,145 @@ function Rules() {
 
   return (
     <div className="mainRules">
-      <div className="main2">
-        <h1>Rules</h1>
-      </div>
-      {/* <> */}
-      <div className="main2">
-        <Button variant="secondary" size="lg" onClick={() => setShow(true)}>
-          Sand Rules and what we Tolerate & Allowed
-        </Button>
+    <h1>Rules</h1>
+      <div className='mainRules1'>
+        {/* <> */}
+        <div className="mainRules2">
+        
+          {/* <p>Click each item to read the rules</p> */}
+          <Button size="lg" onClick={() => setShow(true)}>
+            Sand Rules
+          </Button>
 
-        <Modal
-          show={show}
-          onHide={() => setShow(false)}
-          dialogClassName="modal-90w"
-          aria-labelledby="example-custom-modal-styling-title"
-        >
-          <Modal.Header closeButton>
-            <Modal.Title id="example-custom-modal-styling-title">
-              Sand Rules and what we Tolerate & Allowed
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <ol>
-              <li>
-                No Smoking on the sand courts or within 15 feet of courts,
-                Smoking allowed in designatedarea only.
-              </li>
-              <li>
-                No Using tobacco products (dip) on the sand only in the seating
-                area
-              </li>
-              <li>
-                No Spitting in the sand (We are all barefoot, so please spit
-                outside of the sand.)
-              </li>
-              <li>Food in designated area only.</li>
-              <li>No Glass containers</li>
-              <li>No Hanging or pulling on nets</li>
-              <li>No Adjusting nets (nets can be adjusted by staff)</li>
-              <li>No Kicking balls against fence</li>
-              <li>
-                No dogs on the sand courts, Dogs can be on leashes around the
-                courts or in seating areas.
-              </li>
-              <li>NO Firearms or weapons Allowed</li>
-            </ol>
-          </Modal.Body>
-        </Modal>
+          <Modal
+            show={show}
+            onHide={() => setShow(false)}
+            dialogClassName="modal-90w"
+            aria-labelledby="example-custom-modal-styling-title"
+          >
+            <Modal.Header closeButton>
+              <Modal.Title id="example-custom-modal-styling-title">
+                Sand Rules and what we Tolerate & Allow
+              </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <ol>
+                <li>
+                  No Smoking on the sand courts or within 15 feet of courts,
+                  Smoking allowed in designatedarea only.
+                </li>
+                <li>
+                  No Using tobacco products (dip) on the sand only in the
+                  seating area
+                </li>
+                <li>
+                  No Spitting in the sand (We are all barefoot, so please spit
+                  outside of the sand.)
+                </li>
+                <li>Food in designated area only.</li>
+                <li>No Glass containers</li>
+                <li>No Hanging or pulling on nets</li>
+                <li>No Adjusting nets (nets can be adjusted by staff)</li>
+                <li>No Kicking balls against fence</li>
+                <li>
+                  No dogs on the sand courts, Dogs can be on leashes around the
+                  courts or in seating areas.
+                </li>
+                <li>NO Firearms or weapons Allowed</li>
+              </ol>
+            </Modal.Body>
+          </Modal>
+        </div>
+        {/* </> */}
+        <div className="mainRules2">
+          <ul>
+            <li>
+              <a href='/'>Food and Beverage</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href='/'>Game Equipment</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href='/'>Waivers</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href='/'>Roster</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href='/'>Sportsmanship</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href='/'>Inclement Weather Policy</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href='/'>Teams</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href='/'>Scoring</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href='/'>Timeouts</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href='/'>Team Substitutions During Games</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href='/'>Substitute Players</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href='/'>Competitive Rules and Recreational Rules</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href='/'>Referees</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href='/'>Playoffs</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href='/'>Scheduling</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      {/* </> */}
-      <div className="main2">
-        <Button variant="secondary" size="lg" onClick={() => setShow(true)}>
-          Sand Rules and what we Tolerate & Allowed
-        </Button>
-      </div>
-      <div className="main2">
-        <Button variant="secondary" size="lg" onClick={() => setShow(true)}>
-          Sand Rules and what we Tolerate & Allowed
-        </Button>
-      </div>
-      <div className="main2">
-        <Button variant="secondary" size="lg" onClick={() => setShow(true)}>
-          Sand Rules and what we Tolerate & Allowed
-        </Button>
-      </div>
-      <div className="main2">
-        <Button variant="secondary" size="lg" onClick={() => setShow(true)}>
-          Sand Rules and what we Tolerate & Allowed
-        </Button>
-      </div>
-      <div className="main2">
-        <Button variant="secondary" size="lg" onClick={() => setShow(true)}>
-          Sand Rules and what we Tolerate & Allowed
-        </Button>
-      </div>
-      <div className="main2">
-        <Button variant="secondary" size="lg" onClick={() => setShow(true)}>
-          Sand Rules and what we Tolerate & Allowed
-        </Button>
-      </div>
-      <div className="main2">
-        <Button variant="secondary" size="lg" onClick={() => setShow(true)}>
-          Sand Rules and what we Tolerate & Allowed
-        </Button>
-      </div>
-      <div className="main2">
-        <Button variant="secondary" size="lg" onClick={() => setShow(true)}>
-          Sand Rules and what we Tolerate & Allowed
-        </Button>
+      <div className='mainRules1'>
+          <div className='mainRules2'>
+            <ul>
+              <a><li>Substitution Rules</li></a>
+              <li>Serving</li>
+              <li>Playing the Ball</li>
+              <li>Blocking</li>
+              <li>Forfeit Rule</li>
+              <li>Officials</li>
+            </ul>
+          </div>
       </div>
     </div>
   );
