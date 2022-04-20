@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const Signup = require('./models/signup');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -14,6 +15,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/active-atx', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
+
 
 mongoose.set('debug', true);
 
