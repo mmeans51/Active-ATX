@@ -1,7 +1,7 @@
 /* ------- Leagues page ------- */
 .mainLeagues {
     /* background-color: #FBEEC1; */
-    background-color: #C5C6C7;
+    background-image: linear-gradient( #5AB9EA, #8860D0);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -18,7 +18,7 @@
 /* ------- Tournament page ------- */
 .mainTournament {
     /* background-color: #FBEEC1; */
-    background-color: #C5C6C7;
+    background-image: linear-gradient( #5AB9EA, #8860D0);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -86,7 +86,7 @@
 
 /* ------- Open Play page ------- */
 .mainOpenPlay {
-    background-color: aliceblue;
+    background-image: linear-gradient( #5AB9EA, #8860D0);
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -96,7 +96,7 @@
 
 /* ------- Schedule page ------- */
 .mainSchedule {
-    background-color: aliceblue;
+    background-image: linear-gradient( #5AB9EA, #8860D0);
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -106,7 +106,7 @@
 
 /* ------- Free Agent page ------- */
 .mainFreeAgent {
-    background-color: aliceblue;
+    background-image: linear-gradient( #5AB9EA, #8860D0);
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -116,7 +116,7 @@
 
 /* ------- Signup page ------- */
 .mainSignup {
-    background-color: aliceblue;
+    background-image: linear-gradient( #5AB9EA, #8860D0);
     height: 50vh;
     display: flex;
     flex-direction: column;
