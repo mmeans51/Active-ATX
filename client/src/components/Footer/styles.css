@@ -3,8 +3,26 @@
     bottom: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    position: inherit;
     align-items: center;
     background-color: #CAC292;
     height: 10vh;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.footer1Inner {
+    margin: 5px;
+    padding: 1px;
+}
+
+.links {
+    color: aliceblue;
 }

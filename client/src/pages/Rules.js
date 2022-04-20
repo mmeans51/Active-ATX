@@ -6,11 +6,10 @@ function Rules() {
 
   return (
     <div className="mainRules">
-    <h1>Rules</h1>
-      <div className='mainRules1'>
+      <h1>Rules</h1>
+      <div className="mainRules1">
         {/* <> */}
         <div className="mainRules2">
-        
           {/* <p>Click each item to read the rules</p> */}
           <Button size="lg" onClick={() => setShow(true)}>
             Sand Rules
@@ -59,92 +58,104 @@ function Rules() {
         <div className="mainRules2">
           <ul>
             <li>
-              <a href='/'>Food and Beverage</a>
+              <a href="/">Food and Beverage</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href='/'>Game Equipment</a>
+              <a href="/">Game Equipment</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href='/'>Waivers</a>
+              <a href="/">Waivers</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href='/'>Roster</a>
+              <a href="/">Roster</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href='/'>Sportsmanship</a>
+              <a href="/">Sportsmanship</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href='/'>Inclement Weather Policy</a>
+              <a href="/">Inclement Weather Policy</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href='/'>Teams</a>
+              <a href="/">Teams</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href='/'>Scoring</a>
+              <a href="/">Scoring</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href='/'>Timeouts</a>
+              <a href="/">Timeouts</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href='/'>Team Substitutions During Games</a>
+              <a href="/">Team Substitutions During Games</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href='/'>Substitute Players</a>
+              <a href="/">Substitute Players</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href='/'>Competitive Rules and Recreational Rules</a>
+              <a href="/">Competitive Rules and Recreational Rules</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href='/'>Referees</a>
+              <a href="/">Referees</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href='/'>Playoffs</a>
+              <a href="/">Playoffs</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href='/'>Scheduling</a>
+              <a href="/">Scheduling</a>
             </li>
           </ul>
         </div>
       </div>
-      <div className='mainRules1'>
-          <div className='mainRules2'>
-            <ul>
-              <a href='/'><li>Substitution Rules</li></a>
-              <a href='/'><li>Serving</li></a>
-              <a href='/'><li>Playing the Ball</li></a>
-              <a href='/'><li>Blocking</li></a>
-              <a href='/'><li>Forfeit Rule</li></a>
-              <a href='/'><li>Officials</li></a>
-            </ul>
-          </div>
+      <div className="mainRules1">
+        <div className="mainRules2">
+          <ul>
+            <a href="/">
+              <li>Substitution Rules</li>
+            </a>
+            <a href="/">
+              <li>Serving</li>
+            </a>
+            <a href="/">
+              <li>Playing the Ball</li>
+            </a>
+            <a href="/">
+              <li>Blocking</li>
+            </a>
+            <a href="/">
+              <li>Forfeit Rule</li>
+            </a>
+            <a href="/">
+              <li>Officials</li>
+            </a>
+          </ul>
+        </div>
       </div>
     </div>
   );
