@@ -40,9 +40,7 @@ userSchema.pre('save', async function (next) {
   next();
 });
 
-userSchema.methods.isCorrectPassword = async function (password) {
-  return bcrypt.compare(password, this.password);
-};
+
 
 userSchema.virtual('teamname').get(function () {
   return this.teamName.length;
