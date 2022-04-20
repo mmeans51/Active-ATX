@@ -18,7 +18,11 @@ Lastly, our application has been deployed to Heroku through the live link below.
 Our application has a polished UI, is interactive and includes authentication. This application hopes to bring more 
 
 # User Story
+1. Administrators of local sports leagues nationwide want a platform that will effectively manage their organizations.
 
+2. Team captains want to be able to select and register players in the database.
+
+3. Players want to know when they have games and to communicate with other players in their league.
 
 # Live Link
 
