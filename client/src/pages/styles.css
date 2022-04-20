@@ -77,8 +77,49 @@
    padding: 0;
    /* color: black;  */
 }
-.mainRules2 li:hover {
-    color: aliceblue;
+.mainRules2 a:hover {
+    /* color: aliceblue; */
+    color: #66FCF1;
 }
 
 /* ------- end of Rules page ------- */
+
+/* ------- Open Play page ------- */
+.mainOpenPlay {
+    background-color: aliceblue;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* ------- end of Open Play page ------- */
+
+/* ------- Schedule page ------- */
+.mainSchedule {
+    background-color: aliceblue;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* ------- end of Schedule page ------- */
+
+/* ------- Free Agent page ------- */
+.mainFreeAgent {
+    background-color: aliceblue;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* ------- end of Free Agent page ------- */
+
+/* ------- Signup page ------- */
+.mainSignup {
+    background-color: aliceblue;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* ------- end of Signup page ------- */

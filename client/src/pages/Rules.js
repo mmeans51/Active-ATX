@@ -137,12 +137,12 @@ function Rules() {
       <div className='mainRules1'>
           <div className='mainRules2'>
             <ul>
-              <a><li>Substitution Rules</li></a>
-              <li>Serving</li>
-              <li>Playing the Ball</li>
-              <li>Blocking</li>
-              <li>Forfeit Rule</li>
-              <li>Officials</li>
+              <a href='/'><li>Substitution Rules</li></a>
+              <a href='/'><li>Serving</li></a>
+              <a href='/'><li>Playing the Ball</li></a>
+              <a href='/'><li>Blocking</li></a>
+              <a href='/'><li>Forfeit Rule</li></a>
+              <a href='/'><li>Officials</li></a>
             </ul>
           </div>
       </div>
