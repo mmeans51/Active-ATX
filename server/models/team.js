@@ -6,8 +6,12 @@ const teamSchema = new Schema({
     type: String,
     required: true,
     unique: true,
-
   },
+  teamId: {
+      type: String,
+      required: true,
+  },
+
   players: {
     type: String,
     required: true,
