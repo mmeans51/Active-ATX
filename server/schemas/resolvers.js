@@ -1,58 +1,59 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { Player } = require('../models');
+const { User } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
   Query: {
     me: async (parent, args, context) => {
-      if (context.Player) {
-        const PlayerData = await Player.findOne({ _id: context.Player._id })
+      if (context.user) {
+        const userData = await User.findOne({ _id: context.user._id })
           .select('-__v -password')
-          
+        
 
-        return PlayerData;
+        return userData;
       }
 
       throw new AuthenticationError('Not logged in');
     },
-    Players: async () => {
-      return Player.find()
+    users: async () => {
+      return User.find()
         .select('-__v -password')
-
-        .populate('friends');
+        
     },
-    Player: async (parent, { Playername }) => {
-      return Player.findOne({ Playername })
+    user: async (parent, { username }) => {
+      return User.findOne({ username })
         .select('-__v -password')
-    
+        
     },
     
   },
 
   Mutation: {
-    addPlayer: async (parent, args) => {
-      const Player = await Player.create(args);
-      const token = signToken(Player);
+    addUser: async (parent, args) => {
+      const user = await User.create(args);
+      const token = signToken(user);
 
-      return { token, Player };
+      return { token, user };
     },
     login: async (parent, { email, password }) => {
-      const Player = await Player.findOne({ email });
+      const user = await User.findOne({ email });
 
-      if (!Player) {
+      if (!user) {
         throw new AuthenticationError('Incorrect credentials');
       }
 
-      const correctPw = await Player.isCorrectPassword(password);
+      const correctPw = await user.isCorrectPassword(password);
 
       if (!correctPw) {
         throw new AuthenticationError('Incorrect credentials');
       }
 
-      const token = signToken(Player);
-      return { token, Player };
+      const token = signToken(user);
+      return { token, user };
     },
    
+  
+    
   }
 };
 
