@@ -11,6 +11,7 @@ import Schedule from './pages/Schedule';
 import Rules from './pages/Rules';
 import OpenPlay from './pages/OpenPlay';
 import Signup from './pages/Signup';
+import Contact from './pages/Contact'
 
 function App() {
 
@@ -37,6 +38,9 @@ function App() {
     }
     if(currentPage === 'OpenPlay') {
       return <OpenPlay />
+    }
+    if(currentPage === 'Contact') {
+      return <Contact />
     }
     return <Signup />
   }
