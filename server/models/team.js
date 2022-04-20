@@ -12,11 +12,7 @@ const teamSchema = new Schema({
       required: true,
   },
 
-  players: {
-    type: String,
-    required: true,
-    playernames: [userSchema]
-  },
+
   
 });
 
