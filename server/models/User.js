@@ -50,4 +50,4 @@ userSchema.virtual('teamname').get(function () {
 
 const User = model('User', userSchema);
 
-module.exports = User;
+
