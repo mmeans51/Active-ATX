@@ -48,6 +48,6 @@ userSchema.virtual('teamname').get(function () {
   return this.teamName.length;
 });
 
-const User = model('User', userSchema);
+
 
 module.exports = User;
