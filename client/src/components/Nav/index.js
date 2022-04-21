@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../../assets/images/Logo2.png';
 import './styles.css';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Auth from '../../utils/auth';
 
 function Nav({ currentPage, handlePageChange }) {
