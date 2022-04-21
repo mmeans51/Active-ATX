@@ -40,5 +40,16 @@ const signupController = {
           })
           .catch(err => res.status(400).json(err));
     },
+    deleteSignup({ params }, res) {
+        Signup.findOneAndDelete({ _id: params.id })
+        .then(dbSignupData => {
+            if (!dbSignupData) {
+                res.status(404).json({ message: 'No signup found with this id!' });
+                return;
+            }
+            res.json(dbSignupData);
+        })
+        .catch(err => res.status(400).json(err));
+    }
 
 module.exports = signupController;
