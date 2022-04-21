@@ -129,6 +129,16 @@
     background-image: linear-gradient( #5AB9EA, #8860D0);
     height: 50vh;
     display: flex;
+    padding: 50px;
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+.contactForm {
+    flex: 0;
+    display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
 }
