@@ -9,13 +9,13 @@ const {
 
 router
   .route('/')
-  .get()
-  .post();
+  .get(getAllSignup)
+  .post(createSignup);
 
   router
   .route('/:id')
-  .get()
-  .put()
-  .delete();
+  .get(getSignupById)
+  .put(updateSignup)
+  .delete(deleteSignup);
 
 module.exports = router;
