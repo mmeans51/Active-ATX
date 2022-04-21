@@ -117,10 +117,13 @@
 /* ------- Signup page ------- */
 .mainSignup {
     background-image: linear-gradient( #5AB9EA, #8860D0);
-    /* height: 50vh; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 5%;
+}
+/* ------- end of Signup page ------- */
+
+.mainLogin {
+    background-image: linear-gradient( #5AB9EA, #8860D0);
+    padding: 5%;
 }
 /* ------- end of Signup page ------- */
 
@@ -130,10 +133,6 @@
     /* height: 50vh; */
     display: flex;
     padding: 50px;
-    
-    /* flex-direction: column;
-    align-items: center;
-    justify-content: center; */
 }
 
 .contactTitle {
@@ -144,7 +143,7 @@
 }
 
 .contactForm {
-    flex: 1;
+    /* flex: 1; */
     display: flex;
     align-items: center;
     flex-direction: column;

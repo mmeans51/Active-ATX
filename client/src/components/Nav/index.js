@@ -68,6 +68,11 @@ function Nav({ currentPage, handlePageChange }) {
         </ul>
         <ul>
           <li>
+            <a href='#login' onClick={() => handlePageChange('Login')}>Login</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
             <a href='#sign-up' onClick={() => handlePageChange('Contact')}>Contact</a>
           </li>
         </ul>

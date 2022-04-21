@@ -12,6 +12,7 @@ import Rules from './pages/Rules';
 import OpenPlay from './pages/OpenPlay';
 import Signup from './pages/Signup';
 import Contact from './pages/Contact'
+import Login from './pages/Login';
 
 function App() {
 
@@ -41,6 +42,9 @@ function App() {
     }
     if(currentPage === 'Contact') {
       return <Contact />
+    }
+    if(currentPage === 'Login') {
+      return <Login />
     }
     return <Signup />
   }
