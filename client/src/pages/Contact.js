@@ -1,10 +1,11 @@
 import React from 'react';
+import './styles.css'
 
 function Contact() {
   return (
     <div className="mainContact">
       <div className='contactForm'>
-        <p>Let's get in touch.</p>
+        <h3 className='contactTitle'>Let's get in touch.</h3>
         <form>
           <input type="text" placeholder="Name" />
           <input type="text" placeholder="Subject" />
