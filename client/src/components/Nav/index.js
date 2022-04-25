@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../../assets/images/Logo2.png';
 import './styles.css';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Auth from '../../utils/auth';
 
 function Nav({ currentPage, handlePageChange }) {
@@ -20,112 +20,31 @@ function Nav({ currentPage, handlePageChange }) {
           </div>
           <div className="nav-p">
             <p>League Dates - March 21-27 Week 1 to May 8-15 Week 8</p>
-            <p>CTX Feildhouse Buda Tx Sand Volleyball Courts</p>
+           <p>CTX Feildhouse Buda Tx Sand Volleyball Courts</p>
           </div>
         </div>
       </div>
       <div className="linkContainer">
         <div className="navlinks">
-          {/* {Auth.loggedIn() ? ( */}
+          {/* <Link to={'/'}><a href='/'>Home</a></Link> */}
+          {Auth.loggedIn() ? (
             <>
-              <ul>
-                <li>
-                  <a href="#home" onClick={() => handlePageChange('Home')}>
-                    Home
-                  </a>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a
-                    href="#leagues"
-                    onClick={() => handlePageChange('Leagues')}
-                  >
-                    Leagues
-                  </a>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a
-                    href="#tournament"
-                    onClick={() => handlePageChange('Tournament')}
-                  >
-                    Tournament
-                  </a>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a
-                    href="#schedule"
-                    onClick={() => handlePageChange('Schedule')}
-                  >
-                    Schedule
-                  </a>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a href="#rules" onClick={() => handlePageChange('Rules')}>
-                    Rules
-                  </a>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a
-                    href="#freeAgent"
-                    onClick={() => handlePageChange('FreeAgent')}
-                  >
-                    Free Agent Registration
-                  </a>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a
-                    href="#open-play"
-                    onClick={() => handlePageChange('OpenPlay')}
-                  >
-                    Open Play
-                  </a>
-                </li>
-              </ul>
-            {/* </> */}
-          {/* ) : (
-            <> */}
-              {/* <ul>
-          <li>
-            <a href='#sign-up' onClick={() => handlePageChange('Signup')}>Sign-up</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href='#login' onClick={() => handlePageChange('Login')}>Login</a>
-          </li>
-        </ul> */}
-              {/* <Link to={'/Signup'}>Signup</Link>
-              <Link to={'/Login'}>Login</Link> */}
-              <ul>
-                <li>
-                  <a
-                    href="#sign-up"
-                    onClick={() => handlePageChange('Contact')}
-                  >
-                    Contact
-                  </a>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a href="/" onClick={logout}>
-                    Logout
-                  </a>
-                </li>
-              </ul>
+            <Link to={'/rules'}>Rules</Link>
+            <a href='/' onClick={logout}>
+              Logout
+            </a>
             </>
-          {/* )} */}
+          ) : (
+            <>
+              <Link to={'/'}><ul><li><a href='/'>Home</a></li></ul></Link>
+              <Link to={'/rules'}><ul><li><a href='/rules'>Rules</a></li></ul></Link>
+              <Link to={'/leagues'}><ul><li><a href='/leagues'>Leagues</a></li></ul></Link>
+              <Link to={'/tournament'}><ul><li><a href='/tournament'>Tournament</a></li></ul></Link>
+              <Link to={'/contact'}><ul><li><a href='/contact'>Contact</a></li></ul></Link>
+              <Link to={'/login'}><ul><li><a href='/login'>Login</a></li></ul></Link>
+              <Link to={'/signup'}><ul><li><a href='/signup'>Signup</a></li></ul></Link>
+            </>
+          )}
         </div>
       </div>
     </div>
