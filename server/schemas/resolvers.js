@@ -1,62 +1,9 @@
-const { User } = require('../models/index')
-const { AuthenticationError } = require('apollo-server-express');
-const { signToken } = require('../utils/auth');
-
 const resolvers = {
-    // QUERY
   Query: {
-    me: async(parent, args, context) => {
-        // check for the existence of context.user. If no context.user property exists, then we know that the user isn't authenticated and we can throw an AuthenticationError.
-        if(context.user) {
-        const userData = await User.findOne({})
-        .select('-__v -password')
-
-        return userData;
-        }
-
-        throw new AuthenticationError('Not logged in');
-    },
-
-    // get all users
-    users: async () => {
-      return User.find()
-        .select('-__v -password')
-    },
-
-    // get a user by username
-    user: async (parent, { username }) => {
-      return User.findOne({ username })
-        .select('-__v -password')
-    },
-  },
-
-  // MUTATIONS
-  Mutation: {
-    addUser: async (parent, args) => {
-      // Mongoose User model creates a new user in the database with whatever is passed in as the args
-      const user = await User.create(args);
-      //  sign a token and return an object that combines the token with the user's data
-      const token = signToken(user);
-
-      return { token, user };
-    },
-    login: async (parent, { email, password }) => {
-        
-        const user = await User.findOne({ email });
-
-        if(!user) {
-            throw new AuthenticationError('Incorrect credentials')
-        }
-
-        const correctPw = await user.isCorrectPassword(password);
-
-        if(!correctPw) {
-            throw new AuthenticationError('Incorrect credentials');
-        }
-        const token = signToken(user);
-        return { token, user };
-    },
-  },
+    helloWorld: () => {
+      return 'Hello world!';
+    }
+  }
 };
 
 module.exports = resolvers;
