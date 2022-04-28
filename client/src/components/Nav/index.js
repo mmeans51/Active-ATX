@@ -5,12 +5,14 @@ import './styles.css';
 import { Link } from 'react-router-dom';
 import Auth from '../../utils/auth';
 
-function Nav({ currentPage, handlePageChange }) {
+function Nav() {
+
   const logout = event => {
     event.preventDefault();
 
     Auth.logout();
   };
+  
   return (
     <div className="Nav">
       <div className="jumbotron">
